@@ -1,5 +1,3 @@
-
-
 class Product():
     def __init__(self, name, price, description, quantity, category):
         self.__name = name
@@ -46,12 +44,3 @@ class Product():
     @category.setter
     def category(self, category):
         self.__category = category
-
-    # def toDBCollection(self):
-    #     return {
-    #         'name': self.name,
-    #         'price': self.price,
-    #         'description': self.description,
-    #         'quantity': self.quantity,
-    #         'category': self.category
-    #     }
