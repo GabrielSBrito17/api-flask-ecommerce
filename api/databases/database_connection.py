@@ -1,10 +1,6 @@
 from api import app
 from flask_pymongo import PyMongo
 
-# MONGO_URI = f'mongodb+srv://{config.USER}:{config.PASSWORD}@{config.DB}.ipkdigd.mongodb.net/?retryWrites=true&w=majority'
-
-# ca = certifi.where()
-
 def dbConnection():
     try:
         mongo_db = PyMongo(app)
