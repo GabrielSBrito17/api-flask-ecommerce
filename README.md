@@ -48,7 +48,16 @@ Segue o modelo para cadastro do objeto no banco de dados:
 
 - Para consultar o produto cadastrado, iremos utilizar o valor do ``` id ``` que será mostrado após cadastrar o produto e utilizar o método GET na rota ```http://localhost:4000/products/<id>"``` e teremos o resultado seguinte:
 ``` 
-"{\"_id\": {\"$oid\": \"636737eabb585f2efba0a279\"}, \"name\": \"viol\ão\", \"price\": \"300\", \"description\": \"6 cordas, cordas nylon para iniciante\", \"quantity\": \"6\", \"category\": \"instrumentos musicais\"}"
+{
+"_id": {
+"$oid": "636737eabb585f2efba0a279"
+},
+"name": "viol\u00e3o",
+"price": "300",
+"description": "6 cordas, cordas nylon para iniciante",
+"quantity": "4",
+"category": "instrumentos musicais"
+}
 ```
 - Caso precisar atualizar alguma informação ou algum campo dos dados anteriores, devemos utilizar o método ```PUT``` e corrigir o campo que queremos atualizar. 
 
