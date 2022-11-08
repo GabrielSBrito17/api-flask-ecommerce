@@ -18,7 +18,7 @@ class ProductList(Resource):
     def get(self): # Método GET ele é utilizado para trazer todos os dados solicitados.
         try:
             list = list_product()
-            return make_response(jsonify(list), 200)
+            return make_response(list, 200)
         except:
             return notFound()
 
@@ -36,7 +36,7 @@ class ProductList(Resource):
                 quantity=quantity,
                 category=category
             )
-            return make_response(jsonify(result), 201)
+            return make_response(result, 201)
         except:
             return notFound()
 
@@ -48,7 +48,7 @@ class ProductDetails(Resource):
     '''
     def get(self, id): # Método GET utilizado para solicitar a consulta de um produto pelo ID.
         try:
-            return make_response(jsonify(detail_product(id)), 201)
+            return make_response(detail_product(id), 201)
         except:
             return notFound()
 

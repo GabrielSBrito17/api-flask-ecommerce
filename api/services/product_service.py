@@ -7,13 +7,13 @@ from flask import jsonify
 def list_product():
     db_product = connectDB()
     all_products = db_product.find()
-    response = dumps(all_products)
+    response = dumps(all_products, indent=2)
     return response
 
 def detail_product(id):
     db_product = connectDB()
     product_id = db_product.find_one({'_id': ObjectId(id)})
-    response = dumps(product_id)
+    response = dumps(product_id, indent=2)
     return response
 
 def delete_product(id):
