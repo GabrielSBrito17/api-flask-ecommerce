@@ -1,8 +1,8 @@
-USER = 'oi2319'
-PASSWORD = 'Oi2319'
+USER = 'root'
+PASSWORD = 'root'
 SERVER = 'localhost'
-DB = 'db-teste'
+DB = 'mydb'
 
-MONGO_URI = f'mongodb+srv://{USER}:{PASSWORD}@{DB}.ipkdigd.mongodb.net/?retryWrites=true&w=majority'
-
-SECRET_KEY = 'minha-senha-secreta'
+# MONGO_URI = f'mongodb+srv://{USER}:{PASSWORD}@{DB}.ipkdigd.mongodb.net/?retryWrites=true&w=majority'
+#
+# SECRET_KEY = 'minha-senha-secreta'
